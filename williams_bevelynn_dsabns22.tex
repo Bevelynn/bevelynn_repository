@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  
+%%%% PLEASE DO NOT CHANGE THIS TEMPLATE - DSABNS 2022
+%%%% 									        %
+%		                  Template prepared for the DSABNS 2022
+
+%       pdflatex Abstract_Template_DSABNS22
+%       dvipdf Abstract_Template_DSABNS22
+%       acroread Abstract_Template_DSABNS22.pdf
+
+          			        %
+%													        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DO NOT CHANGE BELOW %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,a4paper]{article}
+\usepackage{graphicx,amssymb,amsfonts,latexsym,amsmath,amsthm,times}
+\usepackage{epsfig}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage[english]{babel}
+\usepackage{authblk}
+\usepackage{fancyhdr}      
+\usepackage{url}
+\usepackage{comment}
+
+\fancyhf{}
+\fancyhead[L]{\em 13th Conference on Dynamical Systems Applied \\ to Biology and Natural Sciences\\ 
+Virtual DSABNS, February 8-11, 2022}
+
+
+\lfoot{\small \copyright DSABNS}
+\rfoot{\small ISBN: 978-989-98750-9-8}
+
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0cm}
+\setlength\headheight{3cm}
+
+\pagestyle{fancy}
+
+
+\addtolength{\voffset}{-2.0cm} \addtolength{\textheight}{0.0cm} 
+
+	
+\renewcommand\Authfont{\scshape\small}
+\renewcommand\Affilfont{\itshape\small}
+\setlength{\affilsep}{2em}
+
+
+\let\LaTeXtitle\title
+\renewcommand{\title}[1]{\LaTeXtitle{\large\textsf{\textbf{#1}}}}				
+
+
+
+\setlength{\textwidth}{6.5in} \textheight=8.0in \oddsidemargin 0in \topmargin 0.3 in
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DO NOT CHANGE ABOVE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% PLEASE RESPECT THE REQUIRED FORMAT IN THE FOLLOWING %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begingroup
+\centering
+{\LARGE A STOCHASTIC INTRACELLULAR MODEL OF ANTHRAX INFECTION WITH SPORE GERMINATION HETEROGENEITY \\[1.5em]
+\large Bevelynn Williams\,{$^*$}{$^{1}$}, Mart\'in L\'opez-Garc\'ia\,{$^{1}$}, Joseph J.~Gillard\,{$^{2}$}, Thomas R.~Laws\,{$^{2}$}, \\
+Grant Lythe\,{$^{1}$}, Jonathan Carruthers\,{$^{3}$}, Thomas Finnie\,{$^{3}$}, Carmen Molina-Par\'is\,{$^{1,4}$}\\[1em]
+$^{1}$University of Leeds, Leeds, United Kingdom \\[0.5em]
+$^{2}$Defence Science and Technology Laboratory, Salisbury, United Kingdom \\[0.5em]
+$^{3}$Public Health England, Salisbury, United Kingdom\\[0.5em]
+$^{4}$ Los Alamos National Laboratory, Los Alamos, NM, USA\\[0.5em]
+\vspace{0.5em}
+\centerline{{mm15bw@leeds.ac.uk (*presenter)}} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% List now the e-mails of ALL non-presenter authors separated by commas and in order of their appearance
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\centerline{
+{m.lopezgarcia@leeds.ac.uk}, {jgillard@dstl.gov.uk}, {trlaws@dstl.gov.uk}, {g.d.lythe@leeds.ac.uk},} \centerline{{jonathan.carruthers@phe.gov.uk}, {thomas.finnie@phe.gov.uk}, {molina-paris@lanl.gov}}
+}
+\endgroup
+
+
+
+
+
+% \thispagestyle{empty}
+
+\vspace{1.0cm}
+
+During inhalational anthrax infection, \textit{Bacillus anthracis} spores are ingested by phagocytes such as alveolar macrophages and dendritic cells. The spores begin to germinate and then proliferate inside the phagocytes, which may eventually lead to death of the host cell and the release of bacteria into the extracellular environment. Alternatively, some phagocytes may be successful in eliminating the intracellular bacteria and will recover. As a generalisation of modelling work previously developed for \textit{Francisella tularensis} \cite{carruthers}, we consider a stochastic, Markov chain model for the intracellular infection dynamics of \textit{B. anthracis} in a single phagocyte, incorporating spore germination and maturation, bacterial proliferation and death, and the possible release of bacteria due to cell rupture \cite{williams}. The model accounts for potential heterogeneity in the spore germination rate, with the consideration of two extreme cases for the rate distribution: continuous Gaussian and discrete Bernoulli. Through Bayesian inference, the model is parameterised using \textit{in vitro} measurements of intracellular spore and bacterial counts for the Sterne 34F2 strain of \textit{B. anthracis} \cite{kang, pantha}. By extending and adapting the methodologies used for \textit{F. tularensis}, we can estimate the rupture size distribution for infected phagocytes, as well as the mean time until phagocyte rupture and bacterial release. Our results support the existence of significant heterogeneity in the germination rate across different spores, with a subset of spores expected to germinate much later than the majority. Furthermore, in agreement with experimental evidence, our results suggest that the majority of spores taken up by macrophages are likely to be eliminated by the host cell, but a few germinated spores may survive phagocytosis and lead to the death of the infected cell. Finally, we discuss how this stochastic modelling approach, together with dose-response data, can allow us to quantify and predict individual infection risk following exposure.
+ 
+%Please write you abstract here, not exceeding 300 words. One figure or table is allowed. The complete abstract should not exceed two pages.
+
+%The References list should  be in alphabetical order of authors and follow closely the style and formats shown as examples for a paper, a book, a paper in a book, a paper in proceedings, or a webpage, respectively \cite{Dumais2013, James1937, Martins2014, Ralescu2013, Who}. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       References            
+% If you do not have references, please comment it out                                                       
+% PLEASE RESPECT THE REQUIRED FORMAT IN THE FOLLOWING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{thebibliography}{99}
+\small
+
+%%%%%%%%%%%%%%%Reference for a paper:
+%Authors (year of publication). Title of the paper. \textit{Name of the Journal} Volume(issue): initial page--final page. DOI
+\bibitem{carruthers}
+Carruthers, J., Lythe, G., L{\'o}pez-Garc{\'\i}a, M., Gillard, J., Laws, T.R., Lukaszewski, R., Molina-Par{\'\i}s, C. (2020). Stochastic dynamics of \textit{Francisella tularensis} infection and replication. \textit{PLOS Computational Biology} 16
+
+\bibitem{kang}
+Kang, T.J., Fenton, M.J., Weiner, M.A., Hibbs, S., Basu, S., Baillie, L., Cross, A.S. (2005). Murine macrophages kill the vegetative form of \textit{Bacillus anthracis}. \textit{Infection and immunity} 73: 7495--7501
+
+\bibitem{pantha}
+Pantha, B., Cross, A., Lenhart, S., Day, J. (2018). Modeling the macrophage-anthrax spore interaction: Implications for early host-pathogen interactions. \textit{Mathematical biosciences} 305:18--28
+
+\bibitem{williams}
+Williams, B., L{\'o}pez-Garc{\'\i}a, M., Gillard, J.J., Laws, T.R., Lythe, G., Carruthers, J., Finnie, T., Molina-Par{\'\i}s, C. (2021). A stochastic intracellular model of anthrax infection with spore germination heterogeneity. \textit{Frontiers in immunology}
+
+\begin{comment}
+
+\bibitem{Dumais2013}
+Dumais, S.A., Rizzuto, T.E., Cleary, J., Dowden, L. (2013). Stressors and supports for adult online learners: Comparing first- and continuing-generation college students. \textit{American Journal of Distance Education} 27(2): 100--110. \url{https://doi.org/10.1080/08923647.2013.783265}
+
+%%%%%%%%%%%%%%%%Reference for a book
+%Authors (year of publication). \textit{Book Title}. Publisher, City.
+\bibitem{James1937}
+James, H. (1937). \textit{The Ambassadors}. Scribner, New York.
+
+%%%%%%%%%%%%%%%%Reference for a paper in a book
+%Authors (year of publication). Title of the paper. In: \textit{Book Title} (Eds: Editorsnames), pp. initial page--finalpage. Publisher, City.
+\bibitem{Martins2014}
+Martins, J.P., Santos, R., Sousa, R. (2014). Testing the maximum by the mean in quantitative group tests. In: \textit{New Advances in Statistical Modeling and Applications} (Eds: Pacheco, A., Santos, R., Oliveira, M.R., Paulino, C.D.), pp. 55--63. Springer, Heidelberg.
+
+%%%%%%%%%%%%%%%%Reference for a paper in proceedings
+%Authors (year of publication). Title of the paper. In: \textit{Proceedings Title} (Eds: Editorsnames), pp. initial page--finalpage. Publisher, City when available.
+\bibitem{Ralescu2013}
+Ralescu, A., D\'{i}az, I. (2013). A distance-frequency classification algorithm. In: \textit{Proc. 14th International Conference on Computational and Mathematical Methods in Science and Engineering, Vol. IV} (Ed: Vigo-Aguiar, J.), pp. 1025--1036. CMMSE, C\'{a}diz (Spain).
+
+%%%%%%%%%%%%%%%%%Reference for a webpage
+%Institution if available. Title or Description if available. URL
+\bibitem{Who}
+WHO. Q\&A on coronaviruses. \url{www.who.int/news-room/q-a-detail/q-acoronaviruses}
+\end{comment}
+
+\end{thebibliography}
+
+
+\end{document}
