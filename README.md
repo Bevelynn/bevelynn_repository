@@ -2,4 +2,6 @@
 
 ## Title
 
-'This is written in markdown language'
+*This is written in markdown language*
+
+Info here ...
