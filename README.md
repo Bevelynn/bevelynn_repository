@@ -5,5 +5,3 @@
 *This is written in markdown language*
 
 Info here ...
-
-I really believe this
